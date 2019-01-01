@@ -106,6 +106,7 @@ def add_website_arguments(parser):
                         help='Host IP address to run app on. Defaults to localhost.')
     parser.add_argument('--config', type=str, default='app_params.json',
                         help='Path to JSON file containing configurations for website')
+    from datetime import datetime
     parser.add_argument('--output', type=str,
                         default="web_output/{}".format(datetime.now().strftime("%Y-%m-%d")),
                         help='Name of directory for storing website output (debug and error logs, chats, '
